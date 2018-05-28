@@ -1,0 +1,35 @@
+.flash {
+	
+	padding-top: 0px;
+	background: #008080;
+	margin: px;
+	/* position:relative; */
+	overflow: hidden;
+}
+
+.flash ul {
+	width: 140px;
+	height: 25px;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: inline-block;
+	padding: 5px 20px;
+	border-radius: 15px;
+	position: absolute;
+	top: 395px;
+	left: 300px;
+}
+
+.flash ul li {
+	width: 15px;
+	height: 15px;
+	border: 1px solid white;
+	float: left;
+	color: white;
+	list-style-type: none;
+	margin-right: 10px;
+	border-radius: 20px;
+}
+
+.flash ul .hover {
+	background: #fff;
+}

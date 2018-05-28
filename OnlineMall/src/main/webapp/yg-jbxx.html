@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>员工-基本信息</title>
+<link  type="text/css" rel="stylesheet"  href="dist/css/style.css"/>
+<link  type="text/css" rel="stylesheet"  href="dist/css/af_index.css"/>
+<script  src="dist/js/jquery.min.js"></script>
+<script  src="dist/js/jbxx.js"></script>
+<!-- <script  src="dist/js/addUpd.js"></script> -->
+<!-- 动态菜单JS -->
+<!--  <script type="text/javascript"  src="dist/js/menu.js"></script>--> 
+</head>
+
+<body>
+
+<div class="container">
+ <div class="cont-top">
+  <div class="companyname">后台管理系统</div>
+  <div class="cont-top-middle">
+   <ul>
+    <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="dist/img/icon.png">
+      </div>
+       <div class="top-txt">购物单</div>
+     </a>
+    </li>
+    
+    <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="dist/img/icon1.png">
+      </div>
+      <div class="top-txt">收款单</div>
+     </a>
+    </li>
+    
+     <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="dist/img/icon1.png">
+      </div>
+      <div class="top-txt">收款单</div>
+     </a>
+    </li>
+    
+     <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="dist/img/icon1.png">
+      </div>
+      <div class="top-txt">收款单</div>
+     </a>
+    </li>
+    
+ 
+   </ul>
+  </div>
+  <div class="cont-top-rg">
+   <ul class="advanced-menu">
+    <li>
+     <div class="top-search">
+      <div class="t-s-l">
+       <span class="left-line"></span>
+       <input type="text" value="搜库存" class="search-type" disabled>
+       <span class="triangle-bottom"></span>
+      </div>
+      <div class="t-s-l">
+       <input type="text" placeholder="请输入商品编码或名称" class="search-dt" autocomplete="off"> 
+       <span class="right-line"></span>
+       <span class="right-icon"><img src="dist/img/search-icon.png"></span>
+      </div>
+     </div>
+    </li>
+    <li class="default" style="position:relative;">
+     <span class="user"><img src="dist/img/user.png"></span>
+     <a  href="#" class="special">小丫头</a>
+     <span class="triangle-bottom" style="margin:6px 0 0 10px;"></span>
+     <div class="drop-down-wrap" style="width:180px;left:15px;display: none;">
+      <div class="drop-down">
+       <span class="triangle-border"></span>
+       <span class="triangle-bg"></span>
+       <ul class="del-ul">
+        <li><a href="#" class="hot">首耀照明</a></li>
+        <li><a href="#">小丫头</a></li>
+        <li><a href="#">操作日志</a></li>       
+       </ul>
+      </div>
+     </div>
+    </li>    
+   </ul>
+   <ul class="advanced-menu">
+    <li>
+     <a href="#"><img  src="dist/img/top-icon1.png"></a>
+    </li>
+    <li>
+     <a href="#"><img  src="dist/img/top-icon2.png"></a>
+    </li>
+    <li>
+     <a href="#"><img  src="dist/img/top-icon3.png"></a>
+    </li>
+    <li>
+     <a href="#"><img  src="dist/img/top-icon4.png"></a>
+    </li>
+    <li>
+     <a href="#"><img  src="dist/img/top-icon5.png"></a>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="left-menu" style="height:949px;">
+  <div class="menu-list">
+   <ul>
+    <li class="menu-list-01" >
+     <a href="kffpUI.do">
+     <p class="fumenu">库房管理</p>
+     <img class="xiala" src="dist/img/xiala.png" />
+     </a>
+     <div class="list-p">
+      <p class="zcd" id="zcd5">入库单</p>
+      <p class="zcd" id="zcd6">出库单</p>
+      <p class="zcd" id="zcd7">库存余额表</p>
+     </div>
+    </li>
+    
+    <li class="menu-list-02">
+     <a  href="ckglUI.do">
+     <p class="fumenu">产品管理</p>
+     <img class="xiala" src="dist/img/xiala.png" />
+     </a>
+     <div class="list-p">
+      <p class="zcd" id="zcd5">产品库存</p>
+      <p class="zcd" id="zcd6">产品成本</p>
+      <p class="zcd" id="zcd7">产品属性管理</p>
+     </div>
+    </li>
+    
+    <li class="menu-list-01" >
+    <a href="ddglUI.do">
+     <p class="fumenu">订单管理</p>
+     <img class="xiala" src="dist/img/xiala.png" />
+     </a>
+     <div class="list-p">
+      <p class="zcd" id="zcd8">下单账户</p>
+      <p class="zcd" id="zcd9">所属员工</p>
+      <p class="zcd" id="zcd10">订单成本</p>
+      <p class="zcd" id="zcd1">订单成本费用</p>
+      <p class="zcd" id="zcd12">订单总支付金额</p>
+      <p class="zcd" id="zcd3">订单商品</p>
+      <p class="zcd" id="zcd14">手动增加订单</p>
+     </div>
+    </li>
+    
+    <li class="menu-list-02">
+     <a href="ckdUI.do">
+     <p class="fumenu">财务管理</p>
+     <img class="xiala" src="dist/img/xiala.png" />
+     </a>
+     <div class="list-p">
+      <p class="zcd" id="zcd15">记录出款和入款</p>
+      <p class="zcd" id="zcd16">计算一段时间的利润</p>
+     </div>
+    </li>
+    
+    <li class="menu-list-01" >
+    <a href="khUI.do">
+     <p class="fumenu">客户管理</p>
+     <img class="xiala" src="dist/img/xiala.png" />
+     </a>
+     <div class="list-p">
+      <p class="zcd" id="zcd17">客户基本信息</p>
+      <p class="zcd" id="zcd18">客户VIP登记管理</p>
+      <p class="zcd" id="zcd19">客户信息管理</p>
+      <p class="zcd" id="zcd20">客户订单管理</p>
+      <p class="zcd" id="zcd21">转移客户</p>
+     </div>
+    </li>
+    
+    <li class="menu-list-02">
+    <a href="jbxxUI.do">
+     <p class="fumenu">员工管理</p>
+     <img class="xiala" src="dist/img/xiala.png" />
+     </a>
+     <div class="list-p">
+      <p class="zcd" id="zcd22">员工基本信息</p>
+      <p class="zcd" id="zcd23">员工权限</p>
+       <p class="zcd" id="zcd24">开通新客户</p>
+      <p class="zcd" id="zcd25">销售额管理</p>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </div>
+ 
+ <div class="right-menu">
+  <div class="main-hd">
+   <div class="page-teb" >
+    <div class="l-tab-links">
+     <ul style="left:0;">
+      <li class="l-select">
+       <a href="#">首页</a>
+      </li>
+       <li class="l-select">
+       <a href="#">员工管理</a>
+      </li>
+     </ul>
+    </div>
+
+    <div class="l-tab-content" style="background:#fff;">
+     <div class="tab-content-item">
+      <div class="home">
+      <!--员工管理   开始-->
+        <div class="yg-gl">
+         <div class="yg-add">
+         
+          <button  class="ui-xz" data-method="offset" >
+   			<a href="addUI.do">新增</a>       
+          </button>
+          <button  class="ui-xz1" data-method="offset" >删除</button>
+          <!--  <a href="">修改</a>  -->
+          <button  class="ui-xz2" data-method="offset" >修改</button>
+          <input type="text" name="table_search" id="searchNameId" value="" placeholder="查询用户"/>
+     	<button type="button" class="btn-search">查询</button>	
+          <a href="download.do">下载并导出Excel</a>
+         </div>
+         <div class="yg-tab">
+          <div class="grid">
+          <div class="layoutitem" style="width:100%;border:none;">
+           <form method="post"> 
+            <table class="gridbar" border="0" cellpadding="0" cellspacing="0">
+            <thead>
+             <tr>
+              <th scope="col">ID</th>
+              <th>员工姓名</th>
+              <th>员工密码</th>
+              <th>手机号码</th>
+              <th>邮箱</th>
+              <th>注册账号的时间</th>
+              <th>更改账号的时间</th>
+             </tr></thead>
+             <tbody id="tbodyId">
+					</tbody>
+            </table>
+            </form>
+           </div>
+            <div class="pagin">
+    	   <div class="message"><i class="blue"></i>&nbsp;<i class="blue">&nbsp;</i></div>
+            <ul class="paginList">
+             <li class="paginItem"><a class="first">首页</a></li>
+             <li class="paginItem current"><a class="pre">上一页</a></li>
+             <li class="paginItem"><a class="next">下一页</a></li>
+            <li class="paginItem"><a class="last">尾页</a></li>
+            <li class="paginItem"><a class="rowCount">总记录数(0)</a></li>
+            <li class="paginItem more"><a class="pageCount">总页数(0)</a></li>
+            <li class="paginItem"><a class="pageCurrent">当前页(1)</a></li>
+           </ul>
+          </div>
+          <div></div>
+          </div>
+         </div>
+        </div>
+    <!--     <script type="text/javascript">
+        $(".pagin")
+        .on("click","#first,#pre,#next,#last",doJumpToPage)
+        //设置分页
+function setPagination(data){
+	   //1.初始化总页数
+	   $("#pageCount").html("总页数("+data.pageCount+")");
+	   //2.初始化总记录数
+	   $("#rowCount").html("总记录数("+data.rowCount+")");
+	   //3.初始化当前页页码
+	   $("#pageCurrent").html("当前页("+data.pageCurrent+")");
+	   //4.绑定数据
+	   $("#pagination").data("pageCurrent",data.pageCurrent);
+	   $("#pagination").data("pageCount",data.pageCount);
+}
+function doJumpToPage(){
+	   //1.获取当前页码以及总页数
+	   var pageCurrent=
+	   $(".pagin").data("pageCurrent");
+	   var pageCount=
+	   $(".pagin").data("pageCount");
+	   //2.根据当前点击的对象执行pageCurrent加减操作
+	   var cls=$(this).prop("class");
+	   if(cls=="pre"&&pageCurrent>1){
+		   pageCurrent--;
+	   }else if(cls=="next"&&pageCurrent<pageCount){
+		   pageCurrent++;
+	   }else if(cls=="first"){
+		   pageCurrent=1;
+	   }else if(cls=="last"){
+		   pageCurrent=pageCount;
+	   }
+	   //3.保存当前pageCurrent的值
+	   $(".pagination").data("pageCurrent",pageCurrent);
+	   //4.按指定页码重新执行查询
+	   doGetObjects();
+}
+        
+        
+        </script>--> 
+  
+       
+      <!--员工管理   结束-->
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.om.web.dao.CollGoodDao">
+	
+	<select id="listGoodIdsByCollId" resultType="int">
+		select good_id from coll_good where coll_id = #{coll_id}
+	</select>
+	
+	<insert id="insertGoodsToColl">
+		insert into coll_good(coll_id,good_id)
+		values
+		<foreach collection="good_ids" separator=","
+			item="good_id">
+			(#{coll_id},#{good_id})
+		</foreach>
+	</insert>
+	
+	<delete id="delGoodsByGoodIds" >
+		delete from coll_good where coll_id = #{coll_id} 
+		and good_id in
+		<foreach collection="good_ids" open="("
+			separator="," close=")" item="good_id">
+			#{good_id}
+		</foreach>
+	</delete>
+		
+	<delete id="emptyColl">
+		delete from coll_good where coll_id = #{coll_id}
+	</delete>
+	
+	<select id="getGoodCount" resultType="int">
+		select count(*) from coll_good where coll_id = #{coll_id}
+	</select>
+	
+</mapper>
+ 

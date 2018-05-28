@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录界面</title>
+<link rel="stylesheet" type="text/css" href="dist/css/login_s.css" />
+<link rel="stylesheet" type="text/css" href="dist/css/lb.css" />
+<script type="text/javascript" src="dist/js/jquery.min.js"></script>
+<script type="text/javascript" src="dist/js/lb.js"></script>
+<script type="text/javascript" src="dist/js/login.js"></script>
+</head>
+<body>
+<div class="container-fluid box" style="margin:0px auto;padding-top:10px;">
+	<div class="row-fluid">
+		<div class="main">
+			<div class="col-xs-3">
+				<h1 style="font-size:30px;color:#337AB7;">
+                <!--logo图片-->
+                <img src="dist/image/logo.jpg" style="height:60px;margin-top:-10px;"/>&nbsp;电脑商城</h1>
+			</div>
+			<div class="col-xs-1">
+			</div>
+			<div class="col-xs-6" style="padding-top:22px;">
+				<div class="form-inline">
+					<div class="form-group">
+						<input type="text" style="width:380px;" class="form-control" placeholder="商品名/商品类型">
+					</div>
+					<button type="button" class="btn btn-info">搜商品</button>
+				</div>
+			</div>
+			<div class="col-xs-2" style="padding-top:22px;">
+				<ul class="list-unstyled list-inline">
+					<li><a href="afIndex.do" class="btn btn-default">员工登录</a></li>
+					<li><a href=" registered_user.html" class="btn btn-default"> 注 册 </a></li>
+									</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid navbar" style="margin-top:0px;margin-bottom:0px;padding-top:10px;background-color:#337AB7;">
+	<div class="row-fluid">
+		<div class="main">
+			<div class="col-xs-12">
+				<ul class="list-unstyled list-inline">
+					<li class="menu col-xs-1"><a href="#">精选服装</a></li>
+					<li class="menu col-xs-1"><a href="#">电子产品</a></li>
+					<li class="menu col-xs-1"><a href="#">生活用品</a></li>
+                   	<li class="menu col-xs-1"><a href="#">零食类</a></li>
+                    <li class="menu col-xs-1"><a href="#">更多……</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="main box">
+			<div class="col-xs-7" style="padding:15px;">
+            <!--左边大图片-->
+				<!--<img src="image/login_3.jpg" />-->
+                	<div class="flash">
+		<img src="dist/image/login_3.jpg" height="416" /> 
+        <img src="dist/image/login_1.jpg" height="416" /> 
+        <img src="dist/image/login_3.jpg" height="416"/> 
+        <img src="dist/image/login_1.jpg" height="416" />
+			
+		<ul class="button">
+			<li class="hover"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+		</ul>
+        
+	
+					</div>
+			</div>
+			<div class="col-xs-4 pull-right" style="margin:30px 30px 0px auto;background-color:#FFFFFF;">
+            
+				<form class="col-xs-12" method="post" action="#">
+					<h4 class="title" style="line-height:3em;margin-bottom:40px;">用户登录</h4><span id="login_span"></span>
+					<div class="form-group input-group">
+						<span class="input-group-addon" ><img src="dist/image/user_logo.png" class="user_logo"  /></span>
+						<input class="form-control" id="usernameId" name="username" placeholder="请输入账号/用户名" type="text" style="height:44px;line-height:24px;font-size:16px;">
+                    </div>
+					<div class="form-group input-group">
+						<span class="input-group-addon"><img src="dist/image/password_logo.png" class="pass_logo"  /></span>
+						<input class="form-control" id="passwordId" name="password" placeholder="请输入密码" type="password" style="height:44px;line-height:24px;font-size:16px;">                     
+					</div>
+					<input type="hidden" value="1" name="userlogin"/>
+					<button type="button" id="loginId" class="btn btn-primary btn-block" style="height:44px;line-height:32px;font-size:16px;margin-top:30px;">登录</button>
+					<a class="btn btn-default btn-block" href="registerUI.do" style="height:44px;line-height:32px;font-size:16px;margin-top:10px;">注册</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid box" style="background-color:#337AB7;margin-bottom:0px;" id="footer">
+	<div class="row-fluid">
+		<div class="main itembox">
+			<div class="col-xs-12">
+				<ul class="list-unstyled">
+					<li class="text-center">电脑商城系统</li>
+					<li class="text-center"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

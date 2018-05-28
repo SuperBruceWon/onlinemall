@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.om.web.dao.CollDao">
+	
+	<insert id="insertObject" parameterType="com.om.web.entity.Coll"
+    	useGeneratedKeys="true" keyProperty="coll_id">
+       insert into coll(user_id,coll_createtime)
+       values(#{user_id},now())
+    </insert>
+
+    <select id="findCollIdByUserId" resultType="int">
+    	select coll_id from coll where user_id = #{user_id}
+    </select>
+	
+</mapper>

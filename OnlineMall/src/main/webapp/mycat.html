@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的购物车</title>
+<link rel="stylesheet" type="text/css" href="css/mycat.css">
+</head>
+<body>
+	<header class="header-navigation" id="header">
+  <nav>
+  <div>
+ <span style="margin-right:55%;"><a class="link" href="#" title="Home" >首页</a></span>
+ 
+ <span> <a class="ulogo" href="#" title="点击查看个人信息"><img src="" width="40px;" height="40px;"></a></span>
+ <span> <a class="link" href="#" title="购物车">购物车</a></span>
+ <span> <a class="link" href="#" title="订单">订单</a></span>
+ <span> <a class="link" href="#" title="反馈">用户反馈</a></span>
+ <span> <a  href="#" title="about us">关于我们</a></span>
+ <span> <a  href="#" title="join us">加入我们</a></span>
+  </div>
+  </nav>
+</header>
+
+
+<script type="text/javascript">
+	var new_scroll_position = 0;
+	var last_scroll_position;
+	var header = document.getElementById("header");
+	window.addEventListener('scroll', function(e) {
+	  last_scroll_position = window.scrollY;
+	  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+		header.classList.remove("slideDown");
+		header.classList.add("slideUp");
+	  } else if (new_scroll_position > last_scroll_position) {
+		header.classList.remove("slideUp");
+		header.classList.add("slideDown");
+	  }
+	  new_scroll_position = last_scroll_position;
+	});
+</script>
+<br />
+<br />
+<br />
+<br />
+<div class="logo">
+				<h1 style="font-size:30px;color:#337AB7;">
+                <!--logo图片-->
+                <img src="image/logo.jpg" style="height:60px;"/>&nbsp;网上商城</h1>
+</div>
+<div align="center">
+
+<div class="search">
+
+<div style="padding:3px;">
+
+<span style="margin-right:10px;"><input type="text" class="searchtexttype"></span><span><input type="submit" class="searchbuttontype" value="搜索"></span>
+</div>
+</div>
+</div>
+<br>
+<div class="leaderlist">
+<div align="center" style=" padding-top:20px;">
+<span style="margin-right:60px;"title="clothes"><a href="#">精选服装</a></span>
+<span style="margin-right:60px;"title="smart toys"><a href="#">电子产品</a></span>
+<span style="margin-right:60px;"title="life needs"><a href="#">生活用品</a></span>
+<span><a title="delisous food" href="#">休闲美食</a></span>
+</div>
+</div>
+
+
+<div class="grzx">
+	<!--全部功能-->
+	<div class="grzx-l"><br />
+    <h2 align="left">全部功能:</h2>
+    <h3><a href="personal.jsp">个人信息</a></h3>
+    <h3><a href="mycat.jsp">我的购物车</a></h3>
+    <h3><a href="myorder.jsp">我的订单</a></h3>
+    <h3><a href="#">我的收藏</a></h3>
+    <h3><a href="mysmark.jsp">评价管理</a></h3>
+    <h3><a href="#">我的足迹</a></h3>
+    <h3><a href="aboutus.jsp">关于我们</a></h3>
+	</div>
+	
+    <div class="grzx-z">
+    </div>
+    
+    <!--我的购物车-->
+    <div class="grzx-r"><br />
+    <h2 style="">我的购物车</h2><br />
+   
+    
+    
+    </div>
+
+
+</div>
+
+</body>
+</html>

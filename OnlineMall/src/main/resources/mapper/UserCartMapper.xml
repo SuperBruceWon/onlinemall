@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.om.web.dao.UserCartDao">
+   
+     <select id="findCartByUserId" resultType="int">
+     	select cart_id from user_cart where user_id = #{user_id}
+     </select>
+     
+     <insert id="insertCartByUserId">
+     	insert into user_cart(user_id,cart_id)
+     	values(#{user_id},#{cart_id})
+     </insert>
+     
+</mapper>
+
+
+

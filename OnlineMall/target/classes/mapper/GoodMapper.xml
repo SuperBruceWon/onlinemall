@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.om.web.dao.GoodDao">
+	<select id="findObjectsByName" resultType="com.om.web.entity.Good">
+		select * from good where good_name=#{name}
+	</select>
+	
+	
+	
+	
+	
+	
+	<insert id="insertGood" 
+		parameterType="com.om.web.entity.Good">
+		insert into good(good_status,category_id,good_name,good_imgsrc,
+		good_desc,good_price,good_amount,good_createtime,good_modifytime)
+		values(#{good_status},#{category_id},#{good_name},#{good_imgsrc},
+		#{good_desc},#{good_price},#{good_amount},now(),now())
+	</insert>
+	
+	<update id="delGoodsByGoodIds">
+		update good set
+		good_status = 0
+		where good_id in
+		<foreach collection="good_ids" open="("
+			separator="," close=")" item="good_id">
+			#{good_id}
+		</foreach>
+	</update>
+	
+	<update id="recGoodsByGoodIds">
+		update good set
+		good_status = 1
+		where good_id in
+		<foreach collection="good_ids" open="("
+			separator="," close=")" item="good_id">
+			#{good_id}
+		</foreach>
+	</update>
+	
+	<update id="updateGood"
+		parameterType="com.om.web.entity.Good">
+		update good set
+			good_status=#{good_status},
+			category_id=#{category_id},
+			good_name=#{good_name},
+			good_imgsrc=#{good_imgsrc},
+			good_desc=#{good_desc},
+			good_price=#{good_price},
+			good_amount=#{good_amount},
+			good_modifytime=now()
+		where 
+			good_id = #{good_id}
+	</update>
+	
+	<select id="findGoodByGoodId" 
+		resultType="com.om.web.entity.Good">
+		select * from good where good_id = #{good_id}
+	</select>
+	
+	<select id="listGoodsByGoodIds" resultType="com.om.web.entity.Good">
+		select * from good where good_id in
+		<foreach collection="good_ids" open="(" separator=","
+			close=")" item="good_id">
+			#{good_id}
+		</foreach>
+		limit #{startIndex},#{pageSize}
+	</select>
+	
+</mapper>

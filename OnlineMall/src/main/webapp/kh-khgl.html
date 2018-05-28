@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>客户管理</title>
+<link type="text/css" rel="stylesheet" href="dist/css/style.css" />
+<link type="text/css" rel="stylesheet" href="dist/css/af_index.css" />
+
+
+<script src="dist/js/jquery.min.js"></script>
+<!-- 动态菜单JS -->
+<script type="text/javascript" src="dist/js/menu.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="cont-top">
+			<div class="companyname">后套管理系统</div>
+			<div class="cont-top-middle">
+				<ul>
+					<li><a href="#">
+							<div class="top-middle">
+								<img src="dist/img/icon.png">
+							</div>
+							<div class="top-txt">购物单</div>
+					</a></li>
+
+					<li><a href="#">
+							<div class="top-middle">
+								<img src="dist/img/icon1.png">
+							</div>
+							<div class="top-txt">收款单</div>
+					</a></li>
+
+					<li><a href="#">
+							<div class="top-middle">
+								<img src="dist/img/icon1.png">
+							</div>
+							<div class="top-txt">收款单</div>
+					</a></li>
+
+					<li><a href="#">
+							<div class="top-middle">
+								<img src="dist/img/icon1.png">
+							</div>
+							<div class="top-txt">收款单</div>
+					</a></li>
+
+					<li><a href="#">
+							<div class="top-middle">
+								<img src="dist/img/icon1.png">
+							</div>
+							<div class="top-txt">收款单</div>
+					</a></li>
+
+					<li><a href="#">
+							<div class="top-middle">
+								<img src="dist/img/icon1.png">
+							</div>
+							<div class="top-txt">收款单</div>
+					</a></li>
+
+				</ul>
+			</div>
+			<div class="cont-top-rg">
+				<ul class="advanced-menu">
+					<li>
+						<div class="top-search">
+							<div class="t-s-l">
+								<span class="left-line"></span> <input type="text" value="搜库存"
+									class="search-type" disabled> <span
+									class="triangle-bottom"></span>
+							</div>
+							<div class="t-s-l">
+								<input type="text" placeholder="请输入商品编码或名称" class="search-dt"
+									autocomplete="off"> <span class="right-line"></span> <span
+									class="right-icon"><img src="dist/img/search-icon.png"></span>
+							</div>
+						</div>
+					</li>
+					<li class="default" style="position: relative;"><span
+						class="user"><img src="dist/img/user.png"></span> <a
+						href="#" class="special">小丫头</a> <span class="triangle-bottom"
+						style="margin: 6px 0 0 10px;"></span>
+						<div class="drop-down-wrap"
+							style="width: 180px; left: 15px; display: none;">
+							<div class="drop-down">
+								<span class="triangle-border"></span> <span class="triangle-bg"></span>
+								<ul class="del-ul">
+									<li><a href="#" class="hot">首耀照明</a></li>
+									<li><a href="#">小丫头</a></li>
+									<li><a href="#">操作日志</a></li>
+								</ul>
+							</div>
+						</div></li>
+				</ul>
+				<ul class="advanced-menu">
+					<li><a href="#"><img src="dist/img/top-icon1.png"></a></li>
+					<li><a href="#"><img src="dist/img/top-icon2.png"></a></li>
+					<li><a href="#"><img src="dist/img/top-icon3.png"></a></li>
+					<li><a href="#"><img src="dist/img/top-icon4.png"></a></li>
+					<li><a href="#"><img src="dist/img/top-icon5.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="left-menu" style="height: 949px;">
+			<div class="menu-list">
+				<ul>
+					<li class="menu-list-01"><a href="kffpUI.do">
+							<p class="fumenu">库房管理</p> <img class="xiala"
+							src="dist/img/xiala.png" />
+					</a>
+						<div class="list-p">
+							<p class="zcd" id="zcd5">入库单</p>
+							<p class="zcd" id="zcd6">出库单</p>
+							<p class="zcd" id="zcd7">库存余额表</p>
+						</div></li>
+
+					<li class="menu-list-02"><a href="ckglUI.do">
+							<p class="fumenu">产品管理</p> <img class="xiala"
+							src="dist/img/xiala.png" />
+					</a>
+						<div class="list-p">
+							<p class="zcd" id="zcd5">产品库存</p>
+							<p class="zcd" id="zcd6">产品成本</p>
+							<p class="zcd" id="zcd7">产品属性管理</p>
+						</div></li>
+
+					<li class="menu-list-01"><a href="ddglUI.do">
+							<p class="fumenu">订单管理</p> <img class="xiala"
+							src="dist/img/xiala.png" />
+					</a>
+						<div class="list-p">
+							<p class="zcd" id="zcd8">下单账户</p>
+							<p class="zcd" id="zcd9">所属员工</p>
+							<p class="zcd" id="zcd10">订单成本</p>
+							<p class="zcd" id="zcd1">订单成本费用</p>
+							<p class="zcd" id="zcd12">订单总支付金额</p>
+							<p class="zcd" id="zcd3">订单商品</p>
+							<p class="zcd" id="zcd14">手动增加订单</p>
+						</div></li>
+
+					<li class="menu-list-02"><a href="ckdUI.do">
+							<p class="fumenu">财务管理</p> <img class="xiala"
+							src="dist/img/xiala.png" />
+					</a>
+						<div class="list-p">
+							<p class="zcd" id="zcd15">记录出款和入款</p>
+							<p class="zcd" id="zcd16">计算一段时间的利润</p>
+						</div></li>
+
+					<li class="menu-list-01"><a href="khUI.do">
+							<p class="fumenu">客户管理</p> <img class="xiala"
+							src="dist/img/xiala.png" />
+					</a>
+						<div class="list-p">
+							<p class="zcd" id="zcd17">客户基本信息</p>
+							<p class="zcd" id="zcd18">客户VIP登记管理</p>
+							<p class="zcd" id="zcd19">客户信息管理</p>
+							<p class="zcd" id="zcd20">客户订单管理</p>
+							<p class="zcd" id="zcd21">转移客户</p>
+						</div></li>
+
+					<li class="menu-list-02"><a href="jbxxUI.do">
+							<p class="fumenu">员工管理</p> <img class="xiala"
+							src="dist/img/xiala.png" />
+					</a>
+						<div class="list-p">
+							<p class="zcd" id="zcd22">员工基本信息</p>
+							<p class="zcd" id="zcd23">员工权限</p>
+							<p class="zcd" id="zcd24">开通新客户</p>
+							<p class="zcd" id="zcd25">销售额管理</p>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="right-menu">
+			<div class="main-hd">
+				<div class="page-teb">
+					<div class="l-tab-links">
+						<ul style="left: 0;">
+							<li class="l-select"><a href="#">首页</a></li>
+							<li class="l-select"><a href="#">客户管理</a></li>
+						</ul>
+					</div>
+
+					<div class="l-tab-content" style="background: #fff;">
+						<div class="tab-content-item">
+							<div class="home">
+								<!--员工管理   开始-->
+								<div class="con-header">
+									<ul class="ui-inline">
+										<li><input type="text" class="ui-kh"
+											placeholder="请输入客户编号查询"></li>
+										<li class="chk-list" style="display: list-item;"></li>
+										<li><a href="#" class="ui-btn11 ui-btn-search">查询</a></li>
+									</ul>
+								</div>
+
+								<div class="yg-gl">
+									<div class="khgl-rg " style="margin-bottom: 15px;">
+										<a href="add.html" class="xz">新增</a> <a href="#" class="ui-bill ui-btn-delete" >删除</a>
+									</div>
+									<div class="yg-tab">
+										<div class="wrap-li">
+											<table class="gridbar" border="0" cellpadding="0"
+												cellspacing="0">
+												<thead>
+													<tr>
+														<th width="60"><input type="checkbox"></th>
+														<th width="180">客户编号</th>
+														<th width="280">客户姓名</th>
+														<th width="200">客户密码</th>
+													</tr>
+												</thead>
+												<tbody id="tbodyId">
+												</tbody>
+											</table>
+										</div>
+										<div class="list-kf">
+											<table class="gridbar bar" border="0" cellpadding="0"
+												cellspacing="0">
+												<thead>
+													<tr>
+
+
+													</tr>
+												</thead>
+											</table>
+										</div>
+
+
+
+
+									</div>
+									<div class="tab-btn">
+										<div class="bt-f"></div>
+									</div>
+								</div>
+
+								<!--员工管理   结束-->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+<script type="text/javascript">
+ $(function(){
+	 doGetObjects();
+	 $(".ui-btn-search").click(doGetObjects)
+	 $(".ui-btn-delete").click(doDeleteObjects)
+ })
+function doDeleteObjects(){
+		//1.获取选中的id
+		var ids=doGetCheckedIds();
+		if(ids.length==0){
+			
+			alert("至少选择一个");
+			return;
+		}
+		//2.发异步请求执行删除操作
+		var url ="custorm/doDeleteObjects.do";
+		var params={"ids":ids.toString()};
+		$.post(url,params,function(result){
+			if(result.stata=1){
+				alert(result.message)
+				doGetObjects()
+			}else{
+				
+			}
+		})
+	}
+	function doGetCheckedIds(){
+		var array=[];
+		$("#tbodyId input[type=checkbox]").each(function(){
+			if($(this).prop("checked")){
+				array.push($(this).val());
+			}
+			//alert(array)
+		});
+		return array;
+	}
+ 
+ 	function doGetObjects() {
+		var url = "custorm/doFindPageObjects.do";
+		/* var params = {
+			pageCurrent : 1
+		} */
+		 var pageCurrent=$("#pageId").data("pageCurrent");
+		   if(!pageCurrent) pageCurrent=1;
+		   var params={"pageCurrent":pageCurrent};
+		   var admin_id =$(".ui-kh").val();
+		   if(admin_id) params.admin_id=admin_id;
+		$.ajax({
+			url : url,
+			data : params,
+			success : function(result) {
+				doSetResule(result);
+			}
+		});
+ 	}
+		function doSetResule(result){
+			if (result.stata = 1) {					
+				if(!result.data){
+					//alert("没有相关数据");
+					doTableInit();
+					return
+				}
+				
+				setTableBodyRows(result.data.records);
+				
+				//setPagination(result.data);
+			} else {
+				alert("123")
+			}
+		}
+		/*初始化表格记录*/
+		function doTableInit(){
+			//初始化表格Body中数据
+			doInitTable();
+		//初始化总记录数，总页数，当前页记录
+			doInitPagination();
+		}
+		function doInitTable(){
+			var tBody = $("#tbodyId");
+			tBody.empty();
+			tBody.append("没有找到对应记录");
+		}
+		
+		function setTableBodyRows(records) {
+			var tBody = $("#tbodyId");
+			tBody.empty();
+			for (var i in records) {
+				var tr = $("<tr></tr>");
+				tr.empty();
+				var tds = "<td><input class=input type='checkbox' name='cItem' value='"+records[i].admin_id+"'></td>"
+				+"<td>"+ records[i].admin_id+ "</td>"  
+						+"<td>"+ records[i].admin_name+ "</td>" + 
+						 "<td>" +records[i].admin_password+ "</td>";
+				tr.data("records",records[i]);
+				tr.append(tds);
+				tBody.append(tr);
+			}
+		}
+	
+</script>

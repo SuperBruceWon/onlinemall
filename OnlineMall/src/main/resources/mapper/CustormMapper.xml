@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.om.web.dao.CustormDao">
+	<delete id="deleteObject">
+		delete from admin where admin_id in
+	<foreach collection="ids" open="(" close=")" separator=","
+			item="item">#{item}</foreach> 
+	</delete>
+	<select id="findPageObject" resultType="com.om.web.entity.Custorm">
+		select * from admin
+		<include refid="queryWhereId"></include>
+		limit #{startIndex},#{pageSize}
+	</select>
+	<select id="getRowCount" resultType="int">
+		select count(*)
+		from admin
+		<include refid="queryWhereId"></include>
+	</select>
+	<sql id="queryWhereId">
+		<where>
+			<if test="admin_id!=null and admin_id!=''">
+				admin_id like concat("%",#{admin_id},"%")
+			</if>
+		</where>
+	</sql>
+	
+	 <insert id="insertObject" parameterType="com.om.web.entity.Custorm">
+		insert into admin(admin_id,admin_name,admin_password) values(#{admin_id},#{admin_name},
+		#{admin_password})
+	</insert>
+	
+	
+	
+	
+	
+	
+</mapper>

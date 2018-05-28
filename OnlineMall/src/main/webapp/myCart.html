@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>我的购物车</title>
+
+<link rel="stylesheet" href="dist/css/myCart.css" />
+<script src="dist/js/jquery.min.js"></script>  
+<script src="dist/js/jquery-migrate-1.1.0.min.js"></script>
+<script src="dist/js/cookieUtil.js"></script>
+<script src="dist/js/myCart.js"></script>
+
+</head>
+
+<body>
+<!-- 头部 -->
+    <div class="hbj cen">
+      <div class="header cen">
+        <ul class="ever fr">
+            <li><a class="" id="loginId">你好，请登录</a></li>
+            <li><a class="zhuce" id="registId">免费注册</a></li>
+            <div class="shugang"></div>
+            <li><a class="" id="orderId">我的订单</a></li>
+            <div class="shugang"></div>
+            <li><a class="" id="judgeId">我的评价</a></li> 
+        </ul>
+      </div>
+    </div>
+  
+    <div class="caozuo cen">
+        <div class="left fl">
+            
+        </div>
+        <div class="midder fl">
+            <div class="sousuo">
+                <input type="text" id="searchNameId" value="自营">
+                <button id="searchId">搜索</button>
+            </div>
+        </div>
+    </div>
+<!-- 登录提示 -->
+   <div class="dlbj">
+   		<div  class="dlts cen">
+   			<!-- <div class="text">
+   				<div class="jg fl"></div>
+   				<div class="ms fl">您还没有登录！登录后购物车的商品将保存到您账号中</div>
+   				<div class="bt fl">立即登录</div>
+   		   </div> -->
+   		</div>
+   		<div class="yf cen">
+        	<div class="yf1 fl"><a>全部商品 </a> <a id="goodNumId"></a></div>
+       		<!-- <div class="sd">
+         			<div class="ps">配送至:</div>
+              <div class="mine-area"><input id="city" value="甘肃省平凉市"></div>
+       		</div> -->
+      </div>
+   </div>
+<!-- 全部商品 -->
+    <div class="midbj">
+        <div class="mid cen">
+        	<div class="mid1"> 
+          		<div class="a1 fl">
+            		<div class="input fl">
+              		<input id="checkedAllId" type="checkbox"  name="love[]">
+            		</div>
+            		<div class="qx fl" id="checkedAll">全选</div>
+          		</div>
+          		<div class="a2 fl">商品</div>
+   		<div class="zybj" id="goodListId">
+   		
+   		 <div class="zy cen">
+		            <div class="input fl ">
+		            	<!-- <input type="checkbox"  name="love[]"> -->
+		            </div>
+		            <!-- <div class="zyan fl">京东自营</div>
+		            <div class="zyr fl"> 钻石会员满￥79.00免运费，其他会员满￥99.00免运费 -->
+		            </div>
+	            </div>
+	        </div>
+	        <div class="zytbj">
+	        
+	       <ul id="goodsAreaId">
+	       
+	       </ul>
+   			
+   		
+   		</div>
+   				
+   	    </div>
+	</div>
+
+ 
+<div class="jsbj">
+	<div class="js cen">
+  		<!-- <div class="js1 fl">
+   			<input id="checkedAllId" type="checkbox"  name="love[]">
+    		<div class="js1_1 fl" id="checkedAll">全选</div>
+  		</div> -->
+  		<div class="js2 fl"><a id="delCheckedGoodsIds">删除选中的商品</a></div>
+  		<div class="js3 fl"><a id="collCheckedGoodsIds" href="collUI.do">移到我的收藏</a></div>
+  		<!-- <div class="js4 fl"><a id="delUnliveGoodId">清除下柜商品</a></div> -->
+  		<div class="js5 fl">
+    		<div class="js6 fl">
+    		</div>
+    		<div class="sjb">
+    			<div class="sjb1">普通商品1件</div>
+    			<div class="sjb2">
+    				<div class="sjb3 fl"></div>
+    				<div class="sjb4 fl"><img src="dist/images/font/1.jpg" alt=""></div>
+    				<div class="sjb5 fl"></div>
+    			</div>
+    		</div>
+    		<div class="sjb"></div>
+    		<div class="sjb"></div>
+    		<div class="js7 fl">
+          		<div class="y1">
+            		<div class="y3 fl">总价:</div>
+           			<div class="y4 fl">
+                  <input type="text" readonly="true" value="0" id="zongji">
+                </div>
+          		</div>
+    		</div>
+   			<div class="js8 fl" id="makeOrderId">去结算</div>
+ 		</div>
+    </div>
+</div>
+    
+<!-- 页尾链接 -->
+
+<div class="sever cen">
+    <ul>
+        <li>购物指南</li>
+        <li><a class="a" href="">购物流程</a></li>
+        <li><a class="a" href="">会员介绍</a></li>
+        <li><a class="a" href="">生活旅行/团购</a></li>
+        <li><a class="a" href="">常见问题</a></li>
+        <li><a class="a" href="">大家电</a></li>
+        <li><a class="a" href="">联系客服</a></li>
+    </ul>
+     <ul>
+        <li>配送方式</li>
+        <li><a class="a" href="">上门自提</a></li>
+        <li><a class="a" href="">211限时达</a></li>
+        <li><a class="a" href="">配送服务查询</a></li>
+        <li><a class="a" href="">配送费收取标准</a></li>
+        <li><a class="a" href="">海外配送</a></li>
+       
+    </ul>
+     <ul>
+        <li>支付方式</li>
+        <li><a class="a" href="">货到付款</a></li>
+        <li><a class="a" href="">在线支付</a></li>
+        <li><a class="a" href="">分期付款</a></li>
+        <li><a class="a" href="">邮局汇款</a></li>
+        <li><a class="a" href="">公司转账</a></li>
+      
+    </ul>
+     <ul>
+        <li>售后服务</li>
+        <li><a class="a" href="">售后政策</a></li>
+        <li><a class="a" href="">价格保护</a></li>
+        <li><a class="a" href="">退款说明</a></li>
+        <li><a class="a" href="">返修/退换货</a></li>
+        <li><a class="a" href="">取消订单</a></li>
+      
+    </ul>
+     <ul>
+        <li>特色服务</li>
+        <li><a class="a" href="">夺宝岛</a></li>
+        <li><a class="a" href="">DIY装机</a></li>
+        <li><a class="a" href="">延保服务</a></li>
+        <li><a class="a" href="">京东E卡</a></li>
+        <li><a class="a" href="">京东通信</a></li>
+        <li><a class="a" href="">京东JD+</a></li>
+    </ul>
+     <ul>
+        <li>京东自营覆盖区县</li>
+        <p>京东已向全国2654个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+        
+        <li><a class="a" href="">查看详情></a></li>
+    </ul>
+</div>
+
+<div class="links cen">
+    <div class="lj cen">
+        <a href="">关于我们</a>
+        <a  class="a">联系我们</a>
+        <a  class="a">联系客服</a>
+        <a  class="a">商家入驻</a>
+        <a  class="a">营销中心</a>
+        <a  class="a">手机京东</a>
+        <a  class="a">友情链接</a>
+        <a  class="a">销售联盟</a>
+        <a  class="a">京东社区</a>
+        <a  class="a">京东公益</a>
+        <a  class="a">English Site</a>
+        <a  class="a">Contact Us</a>
+    </div>
+    <div class="lianjie cen">
+         <a class="c"><img src="dist/img/xiaotu/guohui.jpg"> 京公网安备 11000002000088号</a>
+        <a  class="b">京ICP证070359号</a>
+        <a  class="a">互联网出版许可证编号新出网证(京)字150号</a>
+        <a  class="a">出版物经营许可证</a>
+        <a  class="b">新出发京零 字第大120007号
+                互联网出版许可证编号新出网证(京)字150号</a>
+        <a  class="a">出版物经营许可证</a>
+        <a  class="a">网络文化经营许可证京网文[2014]2148-348号</a>
+        <a  class="b"> 违法和不良信息举报电话：4006561155
+                Copyright © 2004 - 2016  京东JD.com 版权所有</a>
+        <a  class="b">Copyright © 2004 - 2016  京东JD.com 版权所有  |  消费者维权热线：4006067733</a>
+        <a  class="b">京东公益</a>
+        <a  class="b">京东旗下网站：<a class="c">京东钱包</a></a>
+    </div>
+</div>
+
+
+
+</body>
+
+
+
+
+</html>
